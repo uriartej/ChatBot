@@ -1,9 +1,4 @@
-import express from "express";
-const app = express();
-app.use(express.json());
-app.post("/hello", (req, res, next) => {
-    console.log(req.body.name);
-    return res.send("Hello");
-});
+import app from "./app.js";
+//connections and listeners
 app.listen(5000, () => console.log("Server Open"));
 //# sourceMappingURL=index.js.map

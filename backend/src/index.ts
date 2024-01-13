@@ -1,12 +1,4 @@
-import express from "express"
+import app from "./app.js";
 
-const app = express();
-
-app.use(express.json());
-
-app.post("/hello", (req,res,next) => {
-  console.log(req.body.name);
-  return res.send("Hello");
-});
-
+//connections and listeners
 app.listen(5000, () => console.log("Server Open"));
